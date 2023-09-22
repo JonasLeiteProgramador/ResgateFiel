@@ -12,7 +12,7 @@ function cadastrar(){
         localStorage.setItem(chave, dadosPet);
         document.getElementById("nome").value = ""; 
         document.getElementById("idade").value = "";
-        window.location = "index2.html";
+        window.location = "ListaCadastro.html";
     }
    
 }
