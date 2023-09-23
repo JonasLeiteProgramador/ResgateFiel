@@ -11,6 +11,7 @@
     
 }
 
+
 /* Estilos do cabeçalho */
 header {
     position: fixed;
@@ -67,9 +68,15 @@ header {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-left: 380px  ;
-     line-height: 2em;
-     border: 1px solid #ffffff;
-     padding: 20px;
-     background-color: rgba(0, 0, 0, 0.6); 
+    line-height: 2em;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px;
     
+}
+
+.conteudo img {
+    width: 50px;
+    height: 50px;
 }
