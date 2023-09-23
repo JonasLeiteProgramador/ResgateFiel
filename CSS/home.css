@@ -54,13 +54,13 @@ header {
 
 /* Página Principal */
 .pagina-principal {
-    height: calc(115vh - 80px); /* Subtrai a altura do header */
+ height: calc(115vh - 80px); /* Subtrai a altura do header */
     background-image: url('/Imagens/pexels-helena-lopes-1904106.jpg');
     background-size: cover;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 
 .conteudo {
