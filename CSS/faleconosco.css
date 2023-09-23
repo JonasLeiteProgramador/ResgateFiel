@@ -10,11 +10,9 @@
     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
-h1 {
-    font-size: 36px;
-    color: #007BFF;
-}
 
+
+/* Estilos do cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -30,12 +28,12 @@ header {
     border-radius: 5px;
     padding: 0 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+   
 }
 
 .logo img{
     margin-top: 25px;
 }
-
 .menu ul {
     display: flex;
     gap: 3em;
@@ -54,52 +52,31 @@ header {
     color: #545713;
 }
 
-.container img {
-    width: 200px;
-    height: 300px;
-    margin: 20px auto;
-}
-
-#mensagem {
-    font-size: 18px;
-    color: #666;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ca7b27;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container {
+/* Página Principal */
+.pagina-principal {
+    height: calc(115vh - 80px); /* Subtrai a altura do header */
+    background-image: url("/ResgateFiel/Imagens/sobre2.png.jpg");
+    background-size: cover;
     text-align: center;
-    background-color: #dad8dd;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+} 
+
+
+.conteudo {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 380px  ;
+    line-height: 2em;
+    border: 1px solid #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px;
+    
 }
 
-h1 {
-    font-size: 36px;
-    color: #333;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ca7b27;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.texto {
-    text-align: center; 
+.conteudo img {
+    width: 50px;
+    height: 50px;
 }

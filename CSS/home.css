@@ -54,6 +54,8 @@ header {
 
 /* Página Principal */
 .pagina-principal {
+    height: calc(115vh - 80px); /* Subtrai a altura do header */
+    background-image: url('/ResgateFiel/Imagens/pexels-helena-lopes-1904106.jpg');
  height: calc(115vh - 80px); /* Subtrai a altura do header */
     background-image: url('/Imagens/pexels-helena-lopes-1904106.jpg');
     background-size: cover;
