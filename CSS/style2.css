@@ -1,20 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 h1 {
     font-size: 36px;
@@ -28,9 +12,7 @@ h1 {
 
 img {
     width: 200px;
-    height: 200px;
-    background-color: #ddd;
-    border-radius: 50%;
+    height: 300px;
     margin: 20px auto;
 }
 
@@ -40,8 +22,8 @@ img {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ca7b27;
     margin: 0;
     padding: 0;
     display: flex;
@@ -52,7 +34,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: #dad8dd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -65,7 +47,7 @@ h1 {
 
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #ca7b27;
     color: #fff;
     border: none;
     border-radius: 5px;
