@@ -55,7 +55,7 @@ header {
 /* Página Principal */
 .pagina-principal {
     height: calc(115vh - 80px); /* Subtrai a altura do header */
-    background-image: url("/ResgateFiel/Imagens/sobre2.png.jpg");
+    background-image: url("../Imagens/teste2.jpg");
     background-size: cover;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
