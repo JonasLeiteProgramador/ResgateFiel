@@ -10,7 +10,9 @@
     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
-
+body{
+   background-color:  #f67f00;
+}
 
 /* Estilos do cabeçalho */
 header {
@@ -52,18 +54,125 @@ header {
     color: #545713;
 }
 
-/* Página Principal */
-.pagina-principal {
-    height: calc(115vh - 80px); /* Subtrai a altura do header */
+
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Centralizar os slides horizontalmente */
+    align-items: center; /* Centralizar os slides verticalmente */
+    height: 500px; /* Altura do carrossel */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima do carrossel */
+    margin: 0 auto;
+    min-height: 400px;
+    height: calc(100vh - 80px);
+    margin-top: 90px;
+    
+}
+
+/* Estilo para os slides */
+.slide {
+    flex: 0 0 100%; /* Ocupar toda a largura do contêiner */
+    height: 500px; /* Altura do slide */
+    
+
+    border-radius: 3%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+ 
+
+}
+
+/* Estilo para a imagem de fundo do slide */
+
+/* Estilo para o conteúdo dentro do slide */
+.slide-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo do conteúdo */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Cor do texto no slide */
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    max-width: 40%;
+    margin: 0 auto; /* Centralizar horizontalmente */
+    margin-top: 210px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+    
+}
+
+/* Estilo para o título no slide */
+.slide-content h3 {
+    font-size: 28px; /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+}
+
+/* Estilo para o texto no slide */
+.slide-content p {
+    font-size: 16px; /* Tamanho da fonte do texto */
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão no slide */
+.slide-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f67f00; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilo do botão quando passa o mouse */
+.slide-button:hover {
+    background-color: #d65b00; /* Cor de fundo do botão ao passar o mouse */
+}
+.slide-1{
+    background-image: url('/Imagens/laula-co-77oVHWLpRPk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+
+}
+.slide-2{
+    background-image: url('/Imagens/Carousel2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: center;
+   
+
+  
+
+}
+.slide-3{
+    background-image: url('/Imagens/Carousel3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+
+}
+
+/* .pagina-principal {
+    height: calc(115vh - 80px); 
     background-image: url('/ResgateFiel/Imagens/pexels-helena-lopes-1904106.jpg');
- height: calc(115vh - 80px); /* Subtrai a altura do header */
+ height: calc(115vh - 80px); 
     background-image: url('/Imagens/pexels-helena-lopes-1904106.jpg');
     background-size: cover;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;   
-}
+} */
 
 .conteudo {
     color: #ffffff;
@@ -83,7 +192,7 @@ header {
     margin-bottom: 20px;
 }
 
-.cadastro-button {
+/* .cadastro-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #f67f00;
@@ -95,8 +204,84 @@ header {
     transition: background-color 0.3s ease-in-out;
     border: 0.5px solid  #00000000;
     
+} */
+
+
+/* .cadastro-button:hover {
+    background-color: #545713;
+} */
+/* .button-cadastro {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f67f00;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    border: 0.5px solid  #00000000;
+    
+    
+}
+.button-adote {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8400;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    border: 0.5px solid  #00000000;
+} */
+footer {
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 10px;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.como-funciona {
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('/Imagens/pexels-eftodii-aurelia-735423.jpg');
+    background-size: cover;
 }
 
-.cadastro-button:hover {
-    background-color: #545713;
+.como-funciona h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}   
+
+.passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color:rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color:white;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.passo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.passo h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.passo p {
+    font-size: 16px;
 }

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resgate Fiel</title>
     <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,20 +17,59 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="homepage.html">Home</a></li>
                 <li><a href="ListaCadastro.html">Adote aqui</a></li>
+                <li><a href="homepage.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="faleconosco.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
-
-    <main class="pagina-principal">
-        <div class="conteudo">
-            <h2>Bem-vindo ao Resgate Fiel</h2>
-            <h1>Encontre um lar para seu PET</h1>
-            <a href="Pagina Cadastro.html" class="cadastro-button">Cadastre seu PET</a>
+    
+       <section>
+        <div class="carousel-container">
+            <div class="slide slide-1">
+                <div class="slide-content">
+                    <h3>Adote Aqui</h3>
+                    <p>Aqui é onde te damos a oportunidade de dar um lar para os nossos amiguinhos.</p>
+                    <a href="ListaCadastro.html" class="slide-button">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-content">
+                    <h3>Cadastre  aqui</h3>
+                    <p>Salve um animal da rua e dê um lar e uma nova vida</p>
+                    <a href="Pagina Cadastro.html" class="slide-button">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-content">
+                    <h3>Conheça-nos</h3>
+                    <p>Saiba um pouco da nossa história e pelo oque lutamos</p>
+                    <a href="sobre.html" class="slide-button">Saiba Mais</a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section class="como-funciona">
+        <h2>Como Funciona</h2>
+        <div class="passo">
+            <img src="./Imagens/resgate-animal(1).png" alt="Ícone de Resgate">
+            <h3>Passo 1: Resgate</h3>
+            <p>Nossa equipe de voluntários resgata animais de rua em situações de perigo e abandono cadastrados em nosso site ou não.</p>
+        </div>
+        <div class="passo">
+            <img src="./Imagens/veterinario(2).png" alt="Ícone de Reabilitação">
+            <h3>Passo 2: Reabilitação</h3>
+            <p>Os animais resgatados recebem os melhores cuidados veterinários e amorosa reabilitação para recuperação.</p>
+        </div>
+        <div class="passo">
+            <img src="./Imagens/adocao(2).png" alt="Ícone de Adoção">
+            <h3>Passo 3: Adoção</h3>
+            <p>Após a reabilitação, facilitamos a adoção responsável, conectando animais reabilitados a lares amorosos.</p>
+        </div>
+    </section>
+
+    <script src="JS/carrossel.js"></script>
 </body>
 </html>
