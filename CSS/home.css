@@ -81,6 +81,7 @@ header {
 
 }
 
+
 /* Estilo para a imagem de fundo do slide */
 
 /* Estilo para o conteúdo dentro do slide */
@@ -107,7 +108,7 @@ header {
 
 /* Estilo para o título no slide */
 .slide-content h3 {
-    font-size: 28px; /* Tamanho da fonte do título */
+    font-size: 25   px; /* Tamanho da fonte do título */
     margin-bottom: 10px;
 }
 
@@ -136,7 +137,7 @@ header {
     background-color: #d65b00; /* Cor de fundo do botão ao passar o mouse */
 }
 .slide-1{
-    background-image: url('/Imagens/laula-co-77oVHWLpRPk-unsplash.jpg');
+    background-image: url('/Images/laula-co-77oVHWLpRPk-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +145,7 @@ header {
 
 }
 .slide-2{
-    background-image: url('/Imagens/Carousel2.jpg');
+    background-image: url('/Images/Carousel2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
      background-position: center;
@@ -153,8 +154,9 @@ header {
   
 
 }
+
 .slide-3{
-    background-image: url('/Imagens/Carousel3.jpg');
+    background-image: url('/Images/Carousel3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,80 +164,6 @@ header {
 
 }
 
-/* .pagina-principal {
-    height: calc(115vh - 80px); 
-    background-image: url('/ResgateFiel/Imagens/pexels-helena-lopes-1904106.jpg');
- height: calc(115vh - 80px); 
-    background-image: url('/Imagens/pexels-helena-lopes-1904106.jpg');
-    background-size: cover;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;   
-} */
-
-.conteudo {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-left: 380px  ;
-     line-height: 2em;
-    
-}
-
-.conteudo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.conteudo h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-/* .cadastro-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f67f00;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease-in-out;
-    border: 0.5px solid  #00000000;
-    
-} */
-
-
-/* .cadastro-button:hover {
-    background-color: #545713;
-} */
-/* .button-cadastro {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f67f00;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease-in-out;
-    border: 0.5px solid  #00000000;
-    
-    
-}
-.button-adote {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff8400;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease-in-out;
-    border: 0.5px solid  #00000000;
-} */
 footer {
     text-align: center;
     background-color: transparent;
@@ -246,20 +174,20 @@ footer {
     left: 0;
     width: 100%;
 }
-.como-funciona {
+.how-it-works {
     padding: 40px 0;
     text-align: center;
-    background-image: url('/Imagens/pexels-eftodii-aurelia-735423.jpg');
+    background-image: url('/Images/pexels-eftodii-aurelia-735423.jpg');
     background-size: cover;
 }
 
-.como-funciona h2 {
+.how-it-works h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: white;
 }   
 
-.passo {
+.step {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,17 +199,17 @@ footer {
     opacity: 0.9;
 }
 
-.passo img {
+.step img {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
 
-.passo h3 {
+.step h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.passo p {
+.step p {
     font-size: 16px;
 }

@@ -64,8 +64,10 @@ header {
     font-size: 18px;
     color: #666;
 }
-
-body {
+body{
+    background-color: #ca7b27;
+}
+.pagina-lista {
     font-family: 'Poppins', sans-serif;
     background-color: #ca7b27;
     margin: 0;
@@ -74,6 +76,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin-top: 20px;
 }
 
 .container {
