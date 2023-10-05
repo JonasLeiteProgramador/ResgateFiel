@@ -97,6 +97,7 @@ h1 {
 
 button {
     background-color: #FFFFFFFF;
+    margin: 0 auto;
     padding: 10px 15px;
     color: #f67f00;
     border: none;
@@ -104,6 +105,9 @@ button {
     border-radius: 3px;
     font-weight: bold;
     transition: background-color 0.2s ease;
+    width: 50%;
+    display: block;
+
 }
 button:hover{
     background-color: #f67f00;
@@ -112,18 +116,22 @@ button:hover{
 
 }
 #nome, #idade{
-    border: 2px solid #FFFFFFFF;
+    border: 1.5px solid rgb(251, 143, 2);
     border-radius: 3px ;
     color: #000000;
     padding: 10px;
+    width: 100%;
+    margin-top: 3px;
 }
 
 #filesPet {
-    border: 2px solid #FFFFFFFF;
+    border: 1.5px solid rgb(251, 143, 2);
     border-radius: 3px ;
     color: #00000073;
     padding: 10px;
     background-color: #FFFFFF; 
+    width: 100%;
+    margin-top: 3px;
 
 }
 footer {
