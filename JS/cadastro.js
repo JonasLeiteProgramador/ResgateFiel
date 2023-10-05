@@ -25,10 +25,11 @@ function cadastrar(){
     }
    
 }
+const apareceDog = document.querySelector('#resultado');
 function carregarPets(){
   
 
-    const apareceDog = document.querySelector('#resultado');
+ 
     apareceDog.innerHTML = ""; 
 
     for (let chave in localStorage) {
@@ -62,3 +63,27 @@ function carregarPets(){
  
     carregarPets(); 
 }
+function adicionarExemplos() {
+    const exemplos = [
+        { nome: "Nebulosa", idade: "4 meses", imagem: "../Images/Carrocel2.jpg" },
+        { nome: "Luna", idade: "2 anos", imagem: "/Images/Carrocel3.jpg" },
+        { nome: "Blobby", idade: "2 anos", imagem: "/Images/pexels-umut-sarıalan-17657304.jpg" }
+    ];
+
+    exemplos.forEach((exemplo, index) => {
+        const chave = `pet_${Date.now() + index}`;
+        const dadosPet = `Nome: ${exemplo.nome}, Idade: ${exemplo.idade}, Imagem: ${exemplo.imagem}`;
+        
+        // Adicione a classe "dog" aos animais fictícios
+        const aparece = `<div class="animal">
+            <img src="${exemplo.imagem}" alt="Imagem do PET">
+            <span>Nome: ${exemplo.nome}</span>
+            <span>Idade: ${exemplo.idade}</span>
+            <button class="remover-item" data-chave="${chave}" onclick="removerPet(event)">Remover</button>
+        </div>`;
+        apareceDog.innerHTML += aparece
+        localStorage.setItem(chave, dadosPet);
+    });
+}
+adicionarExemplos();
+carregarPets();

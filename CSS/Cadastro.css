@@ -71,9 +71,9 @@ header {
 }
 
 .container {
-    background-color: white;
+   background-color:rgba(0, 0, 0, 0.8); 
     padding: 10px;
-    border: 2px solid #FFFFFFFF;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     width: 500px;
     height: 400px   ;
@@ -96,21 +96,22 @@ h1 {
 
 
 button {
-    background-color: #FFFFFFFF;
+    background-color: #f67f00;
     margin: 0 auto;
     padding: 10px 15px;
-    color: #f67f00;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     border-radius: 3px;
     font-weight: bold;
     transition: background-color 0.2s ease;
     width: 50%;
+    margin-top: 50px;
     display: block;
 
 }
 button:hover{
-    background-color: #f67f00;
+    background-color: #FFFFFFFF;
     color: #FFFFFFFF;
 
 
