@@ -59,22 +59,29 @@ body{
 }
 
 /* Página Principal */
-.pagina-principal {
-    height: calc(115vh - 80px); /* Subtrai a altura do header */
+.pagina-contato {
+    height: calc(130vh - 80px); /* Subtrai a altura do header */
     display: flex;
     align-items: center;
+    justify-content: center;
 } 
 
 
 .conteudo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-left: 380px  ;
     line-height: 2em;
     border: 1px solid #ffffff;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-top: 100px;
+    
     
 }
 
@@ -92,4 +99,55 @@ footer {
     bottom: 0;
     left: 0;
 
+}
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #f67f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #e56300;
+}
+
+
+.pagina-contato a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pagina-contato img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.pagina-contato img:hover {
+    opacity: 1;
 }

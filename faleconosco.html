@@ -20,15 +20,30 @@
         </nav>
     </header>
     <body>
-        <main class="pagina-principal">
+        <main class="pagina-contato">
             <div class="conteudo">
                 <h2>Fale Conosco</h2>
-                <p>Conheça-nos através das redes sociais</p>
-                <a><img src="Images/instagram.png" alt="logo do instagram"></a>
-                <p>Contate-nos</p>
-                <a><img src="Images/whatsapp.png" alt="logo do whatsapp"></a>
+                <p>Estamos aqui para ajudar e ouvir você!</p>
+    
+               
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+    
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+    
+                <p>Ou nos encontre nas redes sociais:</p>
+                <a href="https://www.instagram.com/Resgatefiel?next=%2F"><img src="Images/instagram.png" alt="logo do instagram"></a>
+                <a href="https://api.whatsapp.com/send?phone=5524998755557"><img src="Images/whatsapp.png" alt="logo do whatsapp"></a>
             </div>
-
             
         </main>
         <footer>
@@ -36,5 +51,7 @@
                 &copy; 2023 - Resgate Fiel - Todos os Direitos Reservados.
             </p>
         </footer>
+
+        <script src="JS/fale-conosco.js"></script>
     </body>
 </html>
