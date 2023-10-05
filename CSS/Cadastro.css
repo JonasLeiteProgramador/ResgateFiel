@@ -10,15 +10,16 @@
     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
-
-body {
+body{
     background-image: url('../Images/cadastro.jpg');
-    background-size: cover; 
-    /* 
+   background-size: cover;  
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    */
+
+    
+}
+
+.pagina-cadastro {
+    
     font-size: 1.2em; 
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -77,6 +78,7 @@ header {
     display: flex;
     flex-direction: column;
     font-size: 24px;
+    align-items: center;
 
 }
 
@@ -111,7 +113,7 @@ button:hover{
     padding: 10px;
 }
 
-#arquivo {
+#filesPet {
     border: 2px solid #FFFFFFFF;
     border-radius: 3px ;
     color: #00000073;

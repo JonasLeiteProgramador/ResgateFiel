@@ -75,8 +75,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin-top: 20px;
+    min-height: 110vh;
+    margin-top: 100px;
 }
 
 .container {
@@ -85,6 +85,8 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+  
 }
 
 h1 {
@@ -105,6 +107,29 @@ button {
 
 .texto {
     text-align: center; 
+}
+.animal {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 240px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.animal img {
+    max-width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.animal span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 footer {
