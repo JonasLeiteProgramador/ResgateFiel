@@ -81,7 +81,7 @@ body{
 
 .container {
     text-align: center;
-    background-color: #dad8dd;
+    background-color:  rgb(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -142,3 +142,19 @@ footer {
     left: 0;
     width: 100%;
 }
+.search-label i {
+    margin-right: 10px; /* Espaço entre o ícone e o campo de pesquisa */
+    color: #333; /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Estilize o campo de pesquisa */
+.search {
+    padding: 10px; 
+    border: 1px solid #F17E03;
+    border-radius: 5px; 
+    outline: none; 
+    width: 40%; 
+}
+
+/* Estilização do botão de pesquisa */

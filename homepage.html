@@ -11,12 +11,23 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <header>
+
+    <!-- Copie todo o cabeçalho -->
+    <header class="header">
         <div class="logo">
             <img src="./Images/logo.png" alt="Resgate Fiel Logo" class="logo-img" width="150px" height="130px">
         </div>
         <nav class="menu">
-            <ul>
+             <div class="mobile-menu">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+
+
+             </div>
+
+
+            <ul class="nav-list">
                
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -24,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    
+    <!-- até aqui -->
        <section>
         <div class="carousel-container">
             <div class="slide slide-1">
@@ -54,7 +65,7 @@
     <section class="how-it-works">
         <h2>Como Funciona</h2>
         <div class="step">
-            <!-- <img src="./Imagens/resgate-animal(1).png" alt="Ícone de Resgate"> -->
+            <img src="./Images/resgate-animal(1).png" alt="Ícone de Resgate">
             <h3>Passo 1: Resgate</h3>
             <p>Nossa equipe de voluntários resgata animais de rua em situações de perigo e abandono cadastrados em nosso site ou não.</p>
         </div>
@@ -75,7 +86,8 @@
             </p>
         </footer>
     </section>
-
+     
     <script src="JS/carousel.js"></script>
+    <script src="./JS/mobile-Navbar.js"></script>
 </body>
 </html>

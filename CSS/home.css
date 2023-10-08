@@ -15,7 +15,7 @@ body{
 }
 
 /* Estilos do cabeçalho */
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,10 +36,11 @@ header {
 .logo img{
     margin-top: 25px;
 }
-.menu ul {
+.nav-list {
     display: flex;
+    letter-spacing: 3px;
     gap: 3em;
-    margin-right: 20px;
+    margin-right: 32px;
 }
 
 .menu a {
@@ -54,14 +55,16 @@ header {
     color: #545713;
 }
 
+/* Copie até aqui */
+
 
 .carousel-container {
     display: flex;
-    justify-content: center; /* Centralizar os slides horizontalmente */
-    align-items: center; /* Centralizar os slides verticalmente */
-    height: 500px; /* Altura do carrossel */
+    justify-content: center; 
+    align-items: center; 
+    height: 500px; 
     width: 100%;
-    max-width: 1200px; /* Largura máxima do carrossel */
+    max-width: 1200px; 
     margin: 0 auto;
     min-height: 400px;
     height: calc(100vh - 80px);
@@ -69,10 +72,10 @@ header {
     
 }
 
-/* Estilo para os slides */
+
 .slide {
-    flex: 0 0 100%; /* Ocupar toda a largura do contêiner */
-    height: 500px; /* Altura do slide */
+    flex: 0 0 100%;
+    height: 500px; 
     
 
     border-radius: 3%;
@@ -82,14 +85,13 @@ header {
 }
 
 
-/* Estilo para a imagem de fundo do slide */
 
-/* Estilo para o conteúdo dentro do slide */
+
 .slide-content {
-    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo do conteúdo */
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     text-align: center;
-    color: #fff; /* Cor do texto no slide */
+    color: #fff; 
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
     max-width: 40%;
@@ -103,38 +105,39 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 140px;
+
     
 }
 
-/* Estilo para o título no slide */
+
 .slide-content h3 {
-    font-size: 25   px; /* Tamanho da fonte do título */
+    font-size: 25   px; 
     margin-bottom: 10px;
 }
 
-/* Estilo para o texto no slide */
+
 .slide-content p {
-    font-size: 16px; /* Tamanho da fonte do texto */
+    font-size: 16px; 
     margin-bottom: 20px;
 }
 
-/* Estilo para o botão no slide */
+
 .slide-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f67f00; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: #f67f00; 
+    color: #fff; 
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 18px; /* Tamanho da fonte do botão */
+    font-size: 18px; 
     transition: background-color 0.3s ease-in-out;
-    margin-top: 10px; /* Espaçamento superior */
+    margin-top: 10px; 
 }
 
-/* Estilo do botão quando passa o mouse */
+
 .slide-button:hover {
-    background-color: #d65b00; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #d65b00; 
 }
 .slide-1{
     background-image: url('/Images/laula-co-77oVHWLpRPk-unsplash.jpg');
@@ -213,3 +216,71 @@ footer {
 .step p {
     font-size: 16px;
 }
+
+
+/* copie as seguintes linhas e jogue no final */
+
+.mobile-menu{
+   cursor: pointer;
+   display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* Copie aqui  e cole no final do código css*/
+
+ @media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-list{
+     position: absolute;
+     top: 8vh;
+     right: 0;
+     width: 50vw;
+     height: 92vh;
+     background-color: #f67f00;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     transform: translateX(100%);
+     transition: transform 0.3s ease-in;
+
+   }
+   .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+   }
+   .mobile-menu{
+       
+     display: block;
+   }
+   .nav-list.active{
+       transform: translateX(0);
+   }
+   @keyframes navLinkFade{
+       from{
+           opacity: 0;
+           transform: translateX(50px)
+       }
+       to{
+           opacity: 1;
+           transform: translateX(0)
+       }
+   }
+   .mobile-menu.active .line1{
+       transform: rotate(-45deg) translate(-8px, 8px);
+   }
+
+   .mobile-menu.active .line2{
+       opacity: 0;
+   }
+   .mobile-menu.active .line3{
+       transform: rotate(45deg) translate(-5px, -7px);
+   }
+ }

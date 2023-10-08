@@ -14,8 +14,8 @@ function cadastrar(){
         const reader = new FileReader();
         reader.readAsDataURL(filesPet);
         reader.onload = function () {
-            const imagemBase64 = reader.result;
-            localStorage.setItem(chave, `${dadosPet}, Imagem: ${imagemBase64}`);
+            const imageBase64 = reader.result;
+            localStorage.setItem(chave, `${dadosPet}, Imagem: ${imageBase64}`);
         };
 
         document.getElementById("nome").value = ""; 
@@ -85,5 +85,33 @@ function adicionarExemplos() {
         localStorage.setItem(chave, dadosPet);
     });
 }
+
+function searchPets() {
+    const searchTerm = document.getElementById("search").value.toLowerCase();
+    const listaPets = document.querySelectorAll(".animal");
+
+    listaPets.forEach(pet => {
+        const petNome = pet.querySelector("span:nth-child(2)").textContent.toLowerCase();
+        const petIdade = pet.querySelector("span:nth-child(3)").textContent.toLowerCase();
+
+        if (petNome.includes(searchTerm) || petIdade.includes(searchTerm)) {
+            pet.style.display = "";
+        } else {
+            pet.style.display = "none";
+        }
+    });
+
+    const message = document.getElementById("message");
+    const resultado = document.getElementById("resultado");
+
+    if (searchTerm === "") {
+        message.textContent = "";
+    } else if (resultado.children.length === 0) {
+        message.textContent = "Nenhum resultado encontrado.";
+    } else {
+        message.textContent = `Exibindo resultados para "${searchTerm}".`;
+    }
+}
+
 adicionarExemplos();
 carregarPets();
