@@ -1,5 +1,5 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,26 @@
         <link rel="stylesheet" href= "CSS/lista-cadastro.css">
     </head>
     <header>
-        <div class="logo">
-            <img src="./Images/logo.png" alt="Resgate Fiel Logo" class="logo-img" width="150px" height="130px">
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="ListaCadastro.html">Adote aqui</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="faleconosco.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
+        <header class="header">
+            <div class="logo">
+                <img src="./Images/logo.png" alt="Resgate Fiel Logo" class="logo-img" width="150px" height="130px">
+            </div>
+            <nav class="menu">
+                 <div class="mobile-menu">
+                     <div class="line1"></div>
+                     <div class="line2"></div>
+                     <div class="line3"></div>
+                 </div>
+                <ul class="nav-list">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
     </header>
     <body onload="carregarPets()">
-        <main class="pagina-lista">
+        <main class="list-page">
 
         <div class="container">
             <label class="search-label" for="search"> 
@@ -34,10 +40,10 @@
 
             <h1>Conheça Nossos pets</h1>
             <div class="pets">
-                <img src="./Images/scooby.png" alt="imagem de pet" class="imagem">
+                <img src="./Images/scooby.png" alt="imagem de pet" class="image">
                 <div class="info">
                     <h2>Lista de pets disponíveis</h2>   
-                    <ul id="resultado"></ul>             
+                    <ul id="result"></ul>             
                 </div>
             </div>
            
