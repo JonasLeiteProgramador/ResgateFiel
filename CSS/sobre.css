@@ -27,7 +27,7 @@ header {
     align-items: center;
     height: 60px;
 }
-.imagem-animais{
+.image-animals{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -52,7 +52,7 @@ header {
     transform: scale(1.1);
 }
 
-.imagem-animais img {
+.image-animals img {
     width: 30%;
     border-radius: 10px;
     margin: 0 5px;
@@ -88,8 +88,8 @@ header {
     color: #545713;
 }
 
-/* Página Sobre */
-.pagina-sobre {
+
+.about-page {
     height: calc(175vh - 80px); /* Subtrai a altura do header */
     
     text-align: center; 
@@ -101,7 +101,7 @@ header {
     color: #ffffff;
 }
 
-.conteudo {
+.content {
     max-width: 800px;
     margin: 0 auto;
     padding: 30px;
@@ -135,4 +135,35 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+}
+@media (max-width: 574px){
+   
+    footer {
+        text-align: center;
+        background-color: transparent;
+        color: #fff;  
+        width: auto;
+        text-align: center;
+        margin: 0 auto;
+          ;
+    }
+    .about-page{
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        color: #ffffff;
+        width: auto ;
+    }
+    .about-page h1{
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    .about-page h2{
+        font-size: 13px;
+       
+    }
+    .about-page p{
+        font-size: 12px;
+       
+    }
 }

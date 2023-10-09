@@ -18,7 +18,7 @@ body{
     
 }
 
-.pagina-cadastro {
+.registration-page {
     
     font-size: 1.2em; 
     font-family: 'Poppins', sans-serif;
@@ -116,25 +116,16 @@ button:hover{
 
 
 }
-#nome, #idade{
+#name, #years, #filesPet {
     border: 1.5px solid rgb(251, 143, 2);
     border-radius: 3px ;
     color: #000000;
     padding: 10px;
     width: 100%;
     margin-top: 3px;
-}
-
-#filesPet {
-    border: 1.5px solid rgb(251, 143, 2);
-    border-radius: 3px ;
-    color: #00000073;
-    padding: 10px;
     background-color: #FFFFFF; 
-    width: 100%;
-    margin-top: 3px;
-
 }
+
 footer {
     text-align: center;
     background-color: transparent;
