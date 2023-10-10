@@ -59,7 +59,7 @@ body{
 }
 
 /* Página Principal */
-.pagina-contato {
+.contact-page {
     height: calc(130vh - 80px); /* Subtrai a altura do header */
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ body{
 } 
 
 
-.conteudo {
+.content {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -85,7 +85,7 @@ body{
     
 }
 
-.conteudo img {
+.content img {
     width: 50px;
     height: 50px;
 }
@@ -137,17 +137,17 @@ footer {
 }
 
 
-.pagina-contato a {
+.contact-page a {
     display: inline-block;
     margin-right: 10px;
 }
 
-.pagina-contato img {
+.contact-page img {
     width: 40px;
     height: 40px;
     opacity: 0.7;
 }
 
-.pagina-contato img:hover {
+.contact-page img:hover {
     opacity: 1;
 }
