@@ -83,6 +83,9 @@ body{
     align-items: center;
     min-height: 110vh;
     margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os animais sejam exibidos em várias colunas */
+    justify-content: space-evenly;
 }
 
 .container {
@@ -119,11 +122,12 @@ button {
     padding: 20px;
     margin: 10px;
     display: inline-block;
-    width: 240px;
-    height: 300px;
+    width: 300px;
+    height: 450px;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    background-color:  rgb(254, 157, 5);
 }
 
 .animal img {
@@ -132,10 +136,36 @@ button {
     border-radius: 5px;
 }
 
+
 .animal span {
+
     display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.remove-item {
+    /* ... */
+    background-color: #007BFF; 
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.adopt-item{
+    background-color:  #fffefe; 
+    color: #007BFF; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.animal button:hover {
+    background-color: #3b3e04; /* Cor de fundo ao passar o mouse */
 }
 
 footer {
@@ -149,12 +179,12 @@ footer {
     width: 100%;
 }
 .search-label i {
-    margin-right: 10px; /* Espaço entre o ícone e o campo de pesquisa */
-    color: #333; /* Cor do ícone */
-    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 10px; 
+    color: #333; 
+    font-size: 20px; 
 }
 
-/* Estilize o campo de pesquisa */
+
 .search {
     padding: 10px; 
     border: 1px solid #F17E03;
@@ -163,8 +193,7 @@ footer {
     width: 40%; 
 }
 
-/* Estilização do botão de pesquisa */
-/* copie as seguintes linhas e jogue no final */
+
 
 .mobile-menu{
     cursor: pointer;
@@ -178,7 +207,7 @@ footer {
      transition: 0.3s;
  }
  
- /* Copie aqui  e cole no final do código css*/
+
  
   @media (max-width: 999px){
      body{
