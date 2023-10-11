@@ -41,7 +41,7 @@
                 const dataPet = localStorage.getItem(keyPet);
                 const dataPetArray = dataPet.split(", ");
                 
-                // Verifique se há dados suficientes no array antes de acessá-los
+                
                 if (dataPetArray.length >= 5) {
                     const namePet = dataPetArray[0].split(": ")[1];
                     const yearsPet = dataPetArray[1].split(": ")[1];

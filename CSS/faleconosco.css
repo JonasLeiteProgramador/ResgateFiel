@@ -174,6 +174,11 @@ footer {
      body{
          overflow-x: hidden;
      }
+     .logo{
+        display: none;
+         height: auto;
+         width: auto;
+     }
     .nav-list{
       position: absolute;
       top: 8vh;
@@ -218,6 +223,23 @@ footer {
     }
     .mobile-menu.active .line3{
         transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    .contact-page{
+        height: auto;
+        width: auto;
+        
+    }
+    .content h2{
+        font-size: 16px;
+    }
+    .content p{
+        font-size: 13px;
+    }
+    .submit{
+        font-size: 9px;
+        width: 100%;
+        
     }
   }
  
