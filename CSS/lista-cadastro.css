@@ -84,7 +84,7 @@ body{
     min-height: 110vh;
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os animais sejam exibidos em várias colunas */
+    flex-wrap: wrap; 
     justify-content: space-evenly;
 }
 
@@ -145,9 +145,9 @@ button {
     font-weight: 400;
 }
 .remove-item {
-    /* ... */
+    
     background-color: #007BFF; 
-    color: #fff; /* Cor do texto dos botões */
+    color: #fff; 
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -156,7 +156,7 @@ button {
 }
 .adopt-item{
     background-color:  #fffefe; 
-    color: #007BFF; /* Cor do texto dos botões */
+    color: #007BFF;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -165,7 +165,7 @@ button {
 }
 
 .animal button:hover {
-    background-color: #3b3e04; /* Cor de fundo ao passar o mouse */
+    background-color: #3b3e04; 
 }
 
 footer {

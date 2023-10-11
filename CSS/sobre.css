@@ -14,7 +14,7 @@ body{
    background-color:  #f67f00;
 }
 
-/* Estilos do cabeçalho */
+
 .header {
     position: fixed;
     top: 0;
@@ -118,8 +118,7 @@ body{
 
 
 .about-page {
-    height: calc(175vh - 80px); /* Subtrai a altura do header */
-    
+    height: calc(175vh - 80px); 
     text-align: center; 
     display: flex;
     align-items: center;   
@@ -143,7 +142,7 @@ body{
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #f67f00; /* Nova cor para o título */
+    color: #f67f00; 
 }
 
 p {
@@ -151,7 +150,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Rodapé */
+
 
 
 footer {

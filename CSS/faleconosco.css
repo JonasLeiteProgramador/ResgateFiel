@@ -15,7 +15,7 @@ body{
    background-color:  #f67f00;
 }
 
-/* Estilos do cabeçalho */
+
 .header {
     position: fixed;
     top: 0;
@@ -63,7 +63,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Página Principal */
+
 .contact-page {
     height: calc(130vh - 80px); /* Subtrai a altura do header */
     display: flex;
@@ -169,8 +169,7 @@ footer {
      transition: 0.3s;
  }
  
- /* Copie aqui  e cole no final do código css*/
- 
+
   @media (max-width: 999px){
      body{
          overflow-x: hidden;
