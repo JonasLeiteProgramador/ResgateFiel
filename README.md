@@ -1,7 +1,8 @@
 # Resgate Fiel - Animal Rescue Website
 
-![Resgate Fiel Logo](<img width="76" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/7570370d-217e-49bf-92b3-bf9c4d50b149">
-)
+![Resgate Fiel Logo]<img width="909" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/29425861-c4d6-4130-ba7b-c0a63809ec64">
+
+
 
 The Resgate Fiel project is a website designed to promote animal adoption and rescue, aiming to provide a better life for stray animals.
 
