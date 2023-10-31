@@ -65,14 +65,13 @@ We welcome contributions from the community to help us improve and expand our pl
 
 &copy; 2023 - Resgate Fiel - Todos os Direitos Reservados.
 
-![Resgate Fiel Footer](<img width="339" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/419c4847-4ed1-4ef6-8b92-7628c8e1f186">
-)
+<img width="339" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/419c4847-4ed1-4ef6-8b92-7628c8e1f186">
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Resgate Fiel - Website de Resgate de Animais
 
-![Logotipo do Resgate Fiel](<img width="73" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/7cd527c9-78d9-44a2-bd3e-27fbcf922e57">
-)
+<img width="909" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/29425861-c4d6-4130-ba7b-c0a63809ec64">
 
 O projeto Resgate Fiel é um site projetado para promover a adoção e resgate de animais, com o objetivo de proporcionar uma vida melhor para animais de rua.
 
@@ -132,6 +131,6 @@ Recebemos contribuições da comunidade para nos ajudar a melhorar e expandir no
 
 
 &copy; 2023 - Resgate Fiel - Todos os Direitos Reservados.
+![image](https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/5ed0c78d-4b68-4f25-9179-f64e45c1c1df)
 
-![Rodapé do Resgate Fiel](<img width="330" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/802283e7-214f-4cd2-af08-4037aace5e54">
-)
+
