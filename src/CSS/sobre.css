@@ -12,6 +12,7 @@
 }
 body{
    background-color:  #f67f00;
+
 }
 
 
@@ -118,7 +119,7 @@ body{
 
 
 .about-page {
-    height: calc(175vh - 80px); 
+    height: calc(200vh - 80px); 
     text-align: center; 
     display: flex;
     align-items: center;   
