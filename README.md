@@ -1,6 +1,6 @@
 # Resgate Fiel - Animal Rescue Website
 
-![Resgate Fiel Logo]<img width="909" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/29425861-c4d6-4130-ba7b-c0a63809ec64">
+<img width="909" alt="image" src="https://github.com/JonasLeiteProgramador/ResgateFiel/assets/139612792/29425861-c4d6-4130-ba7b-c0a63809ec64">
 
 
 
