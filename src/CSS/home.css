@@ -140,7 +140,7 @@ body{
     background-color: #d65b00; 
 }
 .slide-1{
-    background-image: url('./src/Images/laula-co-77oVHWLpRPk-unsplash.jpg');
+    background-image: url('./Images/laula-co-77oVHWLpRPk-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,7 +148,7 @@ body{
 
 }
 .slide-2{
-    background-image: url('./src/Images/Carousel2.jpg');
+    background-image: url('./Images/Carousel2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
      background-position: center;
@@ -159,7 +159,7 @@ body{
 }
 
 .slide-3{
-    background-image: url('./src/Images/Carousel3.jpg');
+    background-image: url('./Images/Carousel3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -180,7 +180,7 @@ footer {
 .how-it-works {
     padding: 40px 0;
     text-align: center;
-    background-image: url('./src/Images/pexels-eftodii-aurelia-735423.jpg');
+    background-image: url('./Images/pexels-eftodii-aurelia-735423.jpg');
     background-size: cover;
 }
 
