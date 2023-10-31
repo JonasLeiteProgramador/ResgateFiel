@@ -1,27 +1,49 @@
-
 const appearsAnimal = document.querySelector('#result');
 
+function createPetObject(name, years, local, species, image) {
+    return {
+        name: name,
+        years: years,
+        local: local,
+        species: species,
+        image: image
+    };
+}
 
+function createAndAddPet(name, years, local, species, image) {
+    const keyPet = `pet_${Date.now()}`;
+    const dataPet = `Nome: ${name}, Idade: ${years}, Local: ${local}, Espécie: ${species} `;
+
+    const reader = new FileReader();
+    reader.readAsDataURL(image);
+    reader.onload = function () {
+        const imageBase64 = reader.result;
+        localStorage.setItem(keyPet, `${dataPet}, Imagem: ${imageBase64}`);
+        LoadingPets();
+    };
+}
+
+function createAnimalScreen(namePet, yearsPet, localPet, speciesPet, imageBase64, keyPet) {
+    return `<div class="animal">
+        <img src="${imageBase64}" alt="Imagem do PET">
+        <span>Nome: ${namePet}</span>
+        <span>Idade: ${yearsPet}</span>
+        <span>Local: ${localPet}</span>
+        <span>Espécie: ${speciesPet}</span>
+        <button class="remove-item" data-key="${keyPet}" onclick="removePet(event)">Remover</button>
+        <button class="adopt-item" data-name="${namePet}" data-years="${yearsPet}" data-local="${localPet}" data-species="${speciesPet}" data-image="${imageBase64}" onclick="adoptPet(event)">Adotar</button>
+    </div>`;
+}
 
 function registerPet() {
-
     const namePet = document.getElementById("name").value;
     const yearsPet = document.getElementById("years").value;
     const localPet = document.getElementById("local").value;
     const speciesPet = document.getElementById("species").value;
     const filesPet = document.getElementById("filesPet").files[0];
 
-
     if (namePet && yearsPet && localPet && speciesPet && filesPet) {
-        const keyPet = `pet_${Date.now()}`;
-        const dataPet = `Nome: ${namePet}, Idade: ${yearsPet}, Local: ${localPet}, Espécie: ${speciesPet} `;
-
-        const reader = new FileReader();
-        reader.readAsDataURL(filesPet);
-        reader.onload = function () {
-            const imageBase64 = reader.result;
-            localStorage.setItem(keyPet, `${dataPet}, Imagem: ${imageBase64}`);
-        };
+        createAndAddPet(namePet, yearsPet, localPet, speciesPet, filesPet);
 
         document.getElementById("name").value = "";
         document.getElementById("years").value = "";
@@ -30,7 +52,6 @@ function registerPet() {
         document.getElementById("filesPet").value = "";
         window.location = "ListaCadastro.html";
     }
-
 }
 
 function LoadingPets() {
@@ -41,7 +62,6 @@ function LoadingPets() {
             const dataPet = localStorage.getItem(keyPet);
             const dataPetArray = dataPet.split(", ");
 
-
             if (dataPetArray.length >= 5) {
                 const namePet = dataPetArray[0].split(": ")[1];
                 const yearsPet = dataPetArray[1].split(": ")[1];
@@ -50,58 +70,39 @@ function LoadingPets() {
                 const imageIndex = dataPetArray.findIndex(item => item.includes("Imagem:"));
                 const imageBase64 = imageIndex !== -1 ? dataPetArray[imageIndex].split(": ")[1] : "";
 
-                const screen = `<div class="animal">
-                        <img src="${imageBase64}" alt="Imagem do PET">
-                        <span>Nome: ${namePet}</span>
-                        <span>Idade: ${yearsPet}</span>
-                        <span>Local: ${localPet}</span>
-                        <span>Espécie: ${speciesPet}</span>
-                        <button class="remove-item" data-key="${keyPet}" onclick="removePet(event)">Remover</button>
-                        <button class="adopt-item" data-name="${namePet}" data-years="${yearsPet}" data-local="${localPet}" data-species="${speciesPet}" data-image="${imageBase64}" onclick="adoptPet(event)">Adotar</button>
-                    </div>`;
+                const screen = createAnimalScreen(namePet, yearsPet, localPet, speciesPet, imageBase64, keyPet);
                 appearsAnimal.innerHTML += screen;
             }
         }
     }
 }
 
-
-
-
-
 function removePet(event) {
     const key = event.target.getAttribute("data-key");
     localStorage.removeItem(key);
-
-
     LoadingPets();
-
 }
+
 function addExamples() {
     const examples = [
-        { name: "Nebulosa", years: "4 meses", local: "Rio de Janeiro-Paraíba do Sul", species: "Gato", image: "./Images/Carrocel2.jpg" },
-        { name: "Luna", years: "2 anos", local: "Bahia-Salvador", species: "Cachorro", image: "./Images/Carrocel3.jpg" },
-        { name: "Blobby", years: "2 anos", local: "Espirito Santo-Vitória", species: "Gato", image: "./Images/pexels-umut-sarıalan-17657304.jpg" }
+        createPetObject("Nebulosa", "4 meses", "Rio de Janeiro-Paraíba do Sul", "Gato", "./Images/Carrocel2.jpg"),
+        createPetObject("Luna", "2 anos", "Bahia-Salvador", "Cachorro", "./Images/Carrocel3.jpg"),
+        createPetObject("Blobby", "2 anos", "Espirito Santo-Vitória", "Gato", "./Images/pexels-umut-sarıalan-17657304.jpg")
     ];
 
     examples.forEach((example, index) => {
         const keyPet = `pet_${Date.now() + index}`;
         const dataPet = `Nome: ${example.name}, Idade: ${example.years}, Local: ${example.local}, Espécie: ${example.species}, Imagem: ${example.image}`;
 
-        const screen = `<div class="animal">
-                <img src="${example.image}" alt="Imagem do PET">
-                <span>Nome: ${example.name}</span>
-                <span>Idade: ${example.years}</span>
-                <span>Local: ${example.local}</span>
-                <span>Espécie: ${example.species}</span>
-                <button class="remove-item" data-key="${keyPet}" onclick="removePet(event)">Remover</button>
-                <button class="adopt-item" data-name="${example.name}" data-years="${example.years}" data-local="${example.local}" data-species="${example.species}" data-image="${example.image}" onclick="adoptPet(event)">Adotar</button>
-            </div>`;
-
+        const screen = createAnimalScreen(example.name, example.years, example.local, example.species, example.image, keyPet);
         appearsAnimal.innerHTML += screen;
         localStorage.setItem(keyPet, dataPet);
     });
 }
+
+
+
+
 
 
 function searchPets() {
